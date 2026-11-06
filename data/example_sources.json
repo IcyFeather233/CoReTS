@@ -1,0 +1,142 @@
+[
+  {
+    "task_id": "qa-op-005b4698b8ad885cbb07594d",
+    "repository": "amalfra/docker-hub",
+    "commit": "9b79dbd4528aeeaca916776b93275a8c90c1ce5c",
+    "license": "MIT",
+    "license_file": "licenses/amalfra__docker-hub.txt"
+  },
+  {
+    "task_id": "qa-op-0067bb3f5c4f475a61634666",
+    "repository": "OCA/oca-github-bot",
+    "commit": "5f72e90216d4df1937361f6a6b24bdd7728bc30b",
+    "license": "MIT",
+    "license_file": "licenses/OCA__oca-github-bot.txt"
+  },
+  {
+    "task_id": "qa-op-008ec674846b4b956df2770b",
+    "repository": "cf-natali/ntplib",
+    "commit": "6a0abf7b72b4691182d6b93792ef32d6f6b29f22",
+    "license": "MIT",
+    "license_file": "licenses/cf-natali__ntplib.txt"
+  },
+  {
+    "task_id": "qa-op-00d36588cb3bec943d16f7f6",
+    "repository": "fema-ffrd/rashdf",
+    "commit": "78a5992ae49af214fb3d90887cff5d369f46e1b3",
+    "license": "MIT",
+    "license_file": "licenses/fema-ffrd__rashdf.txt"
+  },
+  {
+    "task_id": "qa-op-00fc8ca4c1e84466036a4caa",
+    "repository": "ClimateImpactLab/climate_toolbox",
+    "commit": "8b3eb274c5f1c3ee83c54e9135f52a6e0e8c054e",
+    "license": "MIT",
+    "license_file": "licenses/ClimateImpactLab__climate_toolbox.txt"
+  },
+  {
+    "task_id": "qa-op-014ac7a570c72d507383c474",
+    "repository": "abs-tudelft/vhdeps",
+    "commit": "dfd679e1c3d8fa1c61285558b0589f40ecd40441",
+    "license": "Apache-2.0",
+    "license_file": "licenses/abs-tudelft__vhdeps.txt"
+  },
+  {
+    "task_id": "qa-op-0153503c84f457e61259ac95",
+    "repository": "plantnet/gbif-dl",
+    "commit": "36cd8a2d1bd40b1e56929d74a448c729e0978eb5",
+    "license": "MIT",
+    "license_file": "licenses/plantnet__gbif-dl.txt"
+  },
+  {
+    "task_id": "qa-op-024f77fc5f1438ab80f234bc",
+    "repository": "ceb10n/pydantic-settings-aws",
+    "commit": "b1532b9a513a5d854645b8ffe5f5a393c0f942b0",
+    "license": "MIT",
+    "license_file": "licenses/ceb10n__pydantic-settings-aws.txt"
+  },
+  {
+    "task_id": "qa-op-02fe6a86b826ca87aecee252",
+    "repository": "sunpy/sunkit-image",
+    "commit": "eeacfdd1e97d1ec84405d38d68df683ea654edcb",
+    "license": "BSD-2-Clause",
+    "license_file": "licenses/sunpy__sunkit-image.txt"
+  },
+  {
+    "task_id": "qa-op-03138f77cfcd27548c19dc99",
+    "repository": "pckroon/pysmiles",
+    "commit": "7404cbf8c83110d6f8f8d34f88f44ae3d412dcad",
+    "license": "Apache-2.0",
+    "license_file": "licenses/pckroon__pysmiles.txt"
+  },
+  {
+    "task_id": "qa-op-032599ea2b88f321a694b5d7",
+    "repository": "kissmetrics/py-KISSmetrics",
+    "commit": "11cfc589e623f0bab8bc450f6fd169715544e377",
+    "license": "MIT",
+    "license_file": "licenses/kissmetrics__py-KISSmetrics.txt"
+  },
+  {
+    "task_id": "qa-op-0352ccc265eee8cb21bc01fb",
+    "repository": "Kludex/uvicorn",
+    "commit": "a99c1b76ee9caea67ff98e2ccc457bd372db193f",
+    "license": "BSD-3-Clause",
+    "license_file": "licenses/Kludex__uvicorn.txt"
+  },
+  {
+    "task_id": "qa-op-03e568e94fa2199db8053148",
+    "repository": "alan-turing-institute/repro-catalogue",
+    "commit": "30b47fa6d87ebb9d1ce242bb22556c8bebb29c25",
+    "license": "MIT",
+    "license_file": "licenses/alan-turing-institute__repro-catalogue.txt"
+  },
+  {
+    "task_id": "qa-op-042618be4b3d30b6ecba1c78",
+    "repository": "lace/polliwog",
+    "commit": "cea8ae3dfae58702b70446777565bacbc06bb822",
+    "license": "BSD-2-Clause",
+    "license_file": "licenses/lace__polliwog.txt"
+  },
+  {
+    "task_id": "qa-op-0458c9058eb4549fb59fdad8",
+    "repository": "goodmami/wn",
+    "commit": "4ec96bdf1152a5a2d60f37a67c900347fd39a04c",
+    "license": "MIT",
+    "license_file": "licenses/goodmami__wn.txt"
+  },
+  {
+    "task_id": "qa-op-048ee4626a01ae72da72d24c",
+    "repository": "JonathonReinhart/scuba",
+    "commit": "43481288d939ab8ceb2b93eb8373510eb3abe205",
+    "license": "MIT",
+    "license_file": "licenses/JonathonReinhart__scuba.txt"
+  },
+  {
+    "task_id": "qa-op-0498d7f0b4f92df3a738dc6d",
+    "repository": "jason-neal/eniric",
+    "commit": "d96bc9341b085367f305d40c8f719c848f86f580",
+    "license": "MIT",
+    "license_file": "licenses/jason-neal__eniric.txt"
+  },
+  {
+    "task_id": "qa-op-0515b178ae7f38ed7ad4e6b7",
+    "repository": "bvanelli/actualpy",
+    "commit": "e79918850c5bb7999d39e5f486a2262fe0d3ce3b",
+    "license": "MIT",
+    "license_file": "licenses/bvanelli__actualpy.txt"
+  },
+  {
+    "task_id": "qa-op-059227ae19255d430b77f6d8",
+    "repository": "neurostuff/PyMARE",
+    "commit": "9f8800eabf56b798820426c6439c111187409d55",
+    "license": "MIT",
+    "license_file": "licenses/neurostuff__PyMARE.txt"
+  },
+  {
+    "task_id": "qa-op-05f24d684a6a4b33ef6c3ed3",
+    "repository": "robotika/osgar",
+    "commit": "3db232792a70d6bbed4a6e31ef5135221c7f882c",
+    "license": "MIT",
+    "license_file": "licenses/robotika__osgar.txt"
+  }
+]

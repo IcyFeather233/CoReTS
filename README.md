@@ -7,7 +7,9 @@ CoReTS synthesizes repository comprehension questions from code, collects tool-a
 * `src/corets/`: repository snapshots, Python evidence extraction, model calls, teacher-agent rollout, quality review, and export.
 * `configs/`: generation parameters and an example repository manifest.
 * `training/`: full fine-tuning script and the Hermes notice compatibility plugin.
-* `data/examples.jsonl`: 20 training trajectories in Hermes format. `data/example_sources.json` records the task, repository, commit and upstream license for each row; license texts are in `data/licenses/`.
+* `data_example/questions.jsonl`: 20 generated questions with their task IDs, repositories, and commits.
+* `data_example/examples.jsonl`: corresponding training trajectories in Hermes format, including questions, tool interactions, and answers.
+* `data_example/example_sources.json`: source and license information for each trajectory; license texts are in `data_example/licenses/`.
 
 ## Generation
 

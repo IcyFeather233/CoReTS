@@ -1,6 +1,7 @@
 [
   {
-    "repository": "cf-natali/ntplib",
-    "commit": "6a0abf7b72b4691182d6b93792ef32d6f6b29f22"
+    "repository": "YOUR_ORG/YOUR_REPOSITORY",
+    "commit": "0000000000000000000000000000000000000000",
+    "source_url": "YOUR_REPOSITORY_URL"
   }
 ]

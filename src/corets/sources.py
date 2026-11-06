@@ -20,7 +20,7 @@ def validate_repository(row: dict) -> dict:
     commit = row.get('commit', row.get('base_commit', ''))
     if not REPO.fullmatch(name) or '..' in name or not COMMIT.fullmatch(commit):
         raise ValueError('Each repository needs owner/name and an exact 40-character commit')
-    source = row.get('source_url', row.get('source', 'https://github.com/' + name + '.git'))
+    source = row.get('source_url', row.get('source', ''))
     parsed = urlsplit(source)
     if parsed.scheme not in ('https', 'http', 'file') or parsed.username or parsed.password or parsed.query or parsed.fragment:
         raise ValueError('Source URL must not contain credentials or command options')

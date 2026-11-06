@@ -1,12 +1,13 @@
 """Keep user notices following tool observations in the Hermes input turn."""
 from swift.llm.template.base import Template
+import os
 
 original_prepare = getattr(Template, '_corets_original_prepare', Template._swift_prepare_inputs)
 
 
 def prepare(self, inputs):
     original_prepare(self, inputs)
-    if self.template_backend != 'swift' or self._agent_template != 'hermes' or self.template_meta.template_type != 'qwen3':
+    if self.template_backend != 'swift' or self._agent_template != 'hermes' or self.template_meta.template_type != os.environ.get('MODEL_TYPE'):
         return
     messages = inputs.messages
     i = 0

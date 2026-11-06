@@ -5,7 +5,6 @@ import subprocess
 from pathlib import Path
 from .io import sha256, write_json
 
-URL = 'https://github.com/TIGER-AI-Lab/SWE-QA-Pro.git'
 REVISION = '93ac6a4f3af3fe3f86580f62142f47e97e2cc897'
 AGENT_SHA256 = 'c7afddb2e2d4ac6479c45368cc313685d68823a7dd9bee9935ca4093b319c142'
 
@@ -25,15 +24,18 @@ def fetch_agent(path: Path) -> Path:
         return subprocess.check_output(['git', *map(str,args)], env=env, stderr=subprocess.PIPE, timeout=300, text=True).strip()
     if path.exists():
         return verify_agent(path)
+    url = os.environ.get('CORETS_AGENT_REPO_URL', '')
+    if not url or url.startswith('YOUR_'):
+        raise ValueError('Set CORETS_AGENT_REPO_URL to the agent repository URL')
     path.parent.mkdir(parents=True,exist_ok=True)
     git('init',path)
-    git('-C',path,'remote','add','origin',URL)
+    git('-C',path,'remote','add','origin',url)
     git('-C',path,'fetch','--depth','1','origin',REVISION)
     git('-C',path,'sparse-checkout','init','--no-cone')
     git('-C',path,'sparse-checkout','set','--no-cone','/eval/','/LICENSE')
     git('-C',path,'checkout','--detach',REVISION)
     verify_agent(path)
-    write_json(path.parent/'agent_source.json',{'url':URL,'revision':REVISION,'agent_sha256':AGENT_SHA256})
+    write_json(path.parent/'agent_source.json',{'url':url,'revision':REVISION,'agent_sha256':AGENT_SHA256})
     return path
 
 

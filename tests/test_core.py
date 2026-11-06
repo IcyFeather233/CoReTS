@@ -26,9 +26,11 @@ class CoreTests(unittest.TestCase):
             question_package({'question': 'Incomplete'})
 
     def test_repository_requires_pinned_commit(self):
-        self.assertEqual(validate_repository({'repository': 'owner/repo', 'commit': 'a'*40})['commit'], 'a'*40)
+        self.assertEqual(validate_repository({'repository': 'owner/repo', 'commit': 'a'*40, 'source_url': 'file:///tmp/repository'})['commit'], 'a'*40)
         with self.assertRaises(ValueError):
             validate_repository({'repository': 'owner/repo', 'commit': 'main'})
+        with self.assertRaises(ValueError):
+            validate_repository({'repository': 'owner/repo', 'commit': 'a'*40})
 
 
 if __name__ == '__main__': unittest.main()
